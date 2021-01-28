@@ -36,7 +36,9 @@ $Output.count.txt
 #### put a new first line:
 add="count_file<-'$Output.count.txt'"
 
-sed -i " 1s|^|${add}\n| " Example_code_delete.R
+cp Delete_Monomorphic.R Delete_Monomorphic_ToRun.R 
+
+sed -i " 1s|^|${add}\n| " Delete_Monomorphic_ToRun.R 
 
 ### Run the Rscript to create the necessary file to delete variants
 
@@ -44,9 +46,7 @@ sed -i " 1s|^|${add}\n| " Example_code_delete.R
 ### Need to be in the directory with this script. And the file will write to that directory
 ##########
 
-cd $WD 
-
-Rscript Example_code_delete.R
+Rscript Delete_Monomorphic_ToRun.R 
 ##########
 
 #### Need to unzip the  haplotype file  before we  can  remove variants

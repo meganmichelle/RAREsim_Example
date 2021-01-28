@@ -2,7 +2,7 @@
 
 ### Code for pruning when variants are only deleted
 
-### Using [ToPrune] to prune [Hap] and [Leg]
+### Using [ToPrune_remove] to prune [SimHap] and [SimLeg]
 
 ### Define Variables:
 
@@ -18,10 +18,12 @@ cd $WD
 #### Specify the file location and add it to the top of the R code
 add="ToDel_file<-'$ToPrune_remove'"
 
-gsed -i " 1s|^|${add}\n| " Example_code_delete_only.R
+cp Example_code_delete.R Example_code_delete_ToRun.R 
+
+gsed -i " 1s|^|${add}\n| " Example_code_delete_ToRun.R
 
 ### Run the Rscript to create List2delete.sed 
-Rscript Example_code_delete_only.R
+Rscript Example_code_delete_ToRun.R
 
 ### First unzip the haplotype file:
 
