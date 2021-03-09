@@ -1,10 +1,7 @@
 ## The RAREsim Example folder  contains:
 
-HAPGEN2_simulation folder:
- # Example code to simulate data with HAPGEN2
-
-Pruning folder
- # Example code to prune the variants, based on the output from the pruning_variants.R function in the RAREsim R package
+# Example folder
+ # Start to finish example simulation
 
 *_input_sim_data.tar.gz
  # The ancestry specific (AFR, EAS, NFE, SAS) input simulation haplotypes used in RAREsim
