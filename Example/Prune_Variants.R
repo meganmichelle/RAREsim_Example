@@ -1,4 +1,5 @@
-ToDel_file<-'/nfs/storage/math/gross-s2/projects/RAREsim/ExampleForBetaTesting/TestSims/Test_b37_NFE_ToPrune.txt'
+
+
 
 #########
 ### Pruning Example: Delete Only R script

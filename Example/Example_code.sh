@@ -98,12 +98,12 @@ add2="new_mac_file<-'$Output.SubsetAA.txt'"
 add3="con1<-'$Output.controls.haps'"
 add4="con2<-'$Output.controls.updated.haps'"
 
-sed -i "1c${add1}" Prune_variants.R
-sed -i "2c${add2}" Prune_variants.R
-sed -i "3c${add3}" Prune_variants.R
-sed -i "4c${add4}" Prune_variants.R
+sed -i "1c${add1}" Prune_subset_of_AA.R
+sed -i "2c${add2}" Prune_subset_of_AA.R
+sed -i "3c${add3}" Prune_subset_of_AA.R
+sed -i "4c${add4}" Prune_subset_of_AA.R
 
-Rscript Prune_variants.R
+Rscript Prune_subset_of_AA.R
 
 rm $Output.controls.haps
 cp $Output.controls.updated.haps $Output.controls.haps
