@@ -1,4 +1,4 @@
-The RAREsim Example folder contains:
+The RAREsim Example page contains:
 
 # Example (folder)
   Start to finish example simulation
