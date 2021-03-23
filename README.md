@@ -1,3 +1,4 @@
+The primary RAREsim code can be found at https://github.com/meganmichelle/RAREsim.
 The RAREsim Example page contains three folders:
 
 # Example 
