@@ -1,7 +1,7 @@
-original_variants_file<-'VariantsToEdit.txt'
-new_mac_file<-'NFE.Block61.SubsetAA.txt'
-con1<-'NFE.Block61.controls.haps'
-con2<-'NFE.Block61.controls.updated.haps'
+
+
+
+
 
 
 library(RAREsim)
