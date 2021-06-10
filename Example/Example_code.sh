@@ -21,7 +21,7 @@ NE=17469
 -Ne $NE \
 -no_gens_output 
 
-rm Simulated_example.cases.*
+rm $Output.cases.*
 
 ### create the MAC file
 zcat $Output.controls.haps.gz | awk '{sum=0; for(i=1; i<=NF; i++) sum += $i; print sum}' > $Output.count.txt
