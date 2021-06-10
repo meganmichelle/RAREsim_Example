@@ -36,14 +36,14 @@ sed -i "1c${count}" Delete_Monomorphic.R
 ### run the Rscript to create the .rem.sed file
 Rscript Delete_Monomorphic.R 
 
-#### unzip the haplotype and genotype files 
+#### unzip the haplotype file 
 gunzip $Output.controls.haps.gz
 
 
-### remove the monomorphic variants from the haplotype and genotype files
+### remove the monomorphic variants from the haplotype file
 sed -i -f $Output.rem.sed $Output.controls.haps 
 
-### remove the legend file header (so line number correctly corresponds)
+### remove the legend file header (so line number directly corresponds with the haplotype file)
 sed -i '1d' $Output.legend
 
 ### remove the monomorphic variants from the legend file
@@ -52,7 +52,7 @@ sed -i -f $Output.rem.sed $Output.legend
 ### create an updated MAC file for pruning
 cat $Output.controls.haps | awk '{sum=0; for(i=1; i<=NF; i++) sum += $i; print sum}' > $Output.count.txt
 
-### relace the first three lines of the Run_RAREsim.R script with the necessary variables
+### relace the first four lines of the Run_RAREsim.R script with the necessary variables
 Nsim2="nsim <- $Nsim"
 pop2="pop <- '$pop'"
 reg_size="reg_size <- $Reg_size_kb\ "
@@ -68,7 +68,7 @@ Rscript Run_RAREsim.R
 
 ### Implement pruning:
 
-#### Check if the subset AA files exists
+#### Check if the subset AA file was written within pruning
 
 FILE=$Output.SubsetAA.txt
 if test -f "$FILE"; then
@@ -105,6 +105,7 @@ sed -i "4c${add4}" Prune_subset_of_AA.R
 
 Rscript Prune_subset_of_AA.R
 
+## Replace the new haplotype file with the old one
 rm $Output.controls.haps
 cp $Output.controls.updated.haps $Output.controls.haps
 rm $Output.controls.updated.haps
@@ -114,7 +115,7 @@ rm VariantsToEdit.txt
 
 fi
 
-## remove other pruned variants
+## completely remove other pruned variants
 
 prune="ToDel_file <- '$Output\_ToPrune.txt'"
 sed -i "1c${prune}" Prune_Variants.R 
