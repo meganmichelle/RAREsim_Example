@@ -53,7 +53,7 @@ python convert.py \
 ### Prune the haplotype to match what is expected
 $ python sim.py \
     -m $Output.controls.haps.gz.sm \
-    -b lib/raresim/test/data/Expected_variants_per_bin_80k.txt \
+    -b MAC_bin_estimates.txt \
     -l $Output.legend \
     -L $Output.new.legend \
     -H $Output.new.hap.gz
