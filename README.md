@@ -5,7 +5,7 @@ Here we have three folders:
 # Example 
  Start to finish example simulation with example bash code for implementation.
  
- RAREsim requires HAPGEN2[https://mathgen.stats.ox.ac.uk/genetics_software/hapgen/hapgen2.html], the RAREsim R package[https://github.com/meganmichelle/RAREsim], and the RAREsim python package[https://github.com/ryanlayer/raresim].
+ RAREsim requires [HAPGEN2](https://mathgen.stats.ox.ac.uk/genetics_software/hapgen/hapgen2.html), the [RAREsim R package](https://github.com/meganmichelle/RAREsim), and the [RAREsim python package](https://github.com/ryanlayer/raresim).
 
 # Reference Data 
 Chromosome 19 coding regions reference data that can be used with RAREsim
