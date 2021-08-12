@@ -1,6 +1,5 @@
-The primary RAREsim code can be found at https://github.com/meganmichelle/RAREsim.
+Supplementary data and information for the [RAREsim R package](https://github.com/meganmichelle/RAREsim), and the [RAREsim python package](https://github.com/ryanlayer/raresim).
 
-Here we have three folders:
 
 # Example 
  Start to finish example simulation with example bash code for implementation.
