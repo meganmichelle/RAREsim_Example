@@ -1,6 +1,6 @@
 Supplementary data and information for the [RAREsim R package](https://github.com/meganmichelle/RAREsim), and the [RAREsim python package](https://github.com/ryanlayer/raresim).
 
-[RAREsim_implementation_flowchart.pdf](https://github.com/meganmichelle/RAREsim_Example/files/7110191/RAREsim_implementation_flowchart.pdf)
+[RAREsim_implementation_flowchart.pdf](https://github.com/meganmichelle/RAREsim_Example/files/7110191/RAREsim_implementation_flowchart.pdf[/embed])
 
 # Example 
  Start to finish example simulation with example bash code for implementation.
