@@ -33,14 +33,14 @@ Nsim2="nsim <- $Nsim"
 pop2="pop <- '$pop'"
 reg_size="reg_size <- $Reg_size_kb\ "
 
-sed -i "1c${Nsim2}" Run_RAREsim.R
-sed -i "2c${pop2}" Run_RAREsim.R
-sed -i "3c${count}" Run_RAREsim.R
-sed -i "4c${reg_size}" Run_RAREsim.R
+sed -i "1c${Nsim2}" Expected_MAC_bins.R
+sed -i "2c${pop2}" Expected_MAC_bins.R
+sed -i "3c${count}" Expected_MAC_bins.R
+sed -i "4c${reg_size}" Expected_MAC_bins.R
 
 ### run RAREsim
 
-Rscript Run_RAREsim.R
+Rscript Expected_MAC_bins.R
 
 
 ### Convert the haplotype file into a sparse matrix
