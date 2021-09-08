@@ -16,3 +16,6 @@ Chromosome 19 coding regions reference data that can be used with RAREsim
 
 # Code_from_analysis
   Code necessary to recreate the majority of the analysis examined in the RAREsim manuscript
+  
+# Code_from_analysis
+  AFS and Nvariant target data stratified by functional and synonymous status. Target data is available for each cM block on chromosome 19, for each of the four ancesties.
