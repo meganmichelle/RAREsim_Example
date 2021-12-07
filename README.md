@@ -22,4 +22,6 @@ Chromosome 19 coding regions reference data that can be used with RAREsim
   
 # Simulated Data
   Already simulated rare variant data is available at [this link](https://drive.google.com/drive/folders/17UuAPYydEcj_chsfMLl3XDDlkhkoG1I3?usp=sharing). For each of the four ancestral populations, 1,000 replicates of the block with the median number of bp (19,029 bp) was simulated for twice the sample size observed in gnomAD: African: N=16,256; East Asian: N=18,394; Non-Finnish European: N=113,770; South Asian: N=30,616.
+  
+  The folder contains the code used to create the data.
 
