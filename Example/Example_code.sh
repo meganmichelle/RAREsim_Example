@@ -35,8 +35,7 @@ reg_size="reg_size <- $Reg_size_kb\ "
 
 sed -i "1c${Nsim2}" Expected_MAC_bins.R
 sed -i "2c${pop2}" Expected_MAC_bins.R
-sed -i "3c${count}" Expected_MAC_bins.R
-sed -i "4c${reg_size}" Expected_MAC_bins.R
+sed -i "3c${reg_size}" Expected_MAC_bins.R
 
 ### run RAREsim
 
