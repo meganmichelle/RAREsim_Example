@@ -10,9 +10,9 @@ library(RAREsim)
 exp_var <- reg_size*nvariant(N = nsim, pop = pop)
 
 ### minor allele frequencies
-maf1 <- round(0.01*(2*nsim))
-maf0.5 <- maf1/2
-maf0.25 <- maf0.5/2
+maf1 <- floor(0.01*(2*nsim))
+maf0.5 <- floor(maf1/2)
+maf0.25 <- floor(maf0.5/2)
 
 ### minor allele count bins
 if (nsim > 3500){
